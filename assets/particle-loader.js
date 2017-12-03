@@ -11,13 +11,13 @@ particlesJS("particles-js", {
       }
     },
     "color": {
-      "value": "#FFD700"
+      "value": "#fff"
     },
     "shape": {
       "type": "star",
       "stroke": {
         "width": 0,
-        "color": "#FFD700"
+        "color": "#fff"
       },
       "polygon": {
         "nb_sides": 5
