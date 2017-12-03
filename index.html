@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <title>RoyalUHC</title>
+</head>
+<body>
+  <div id="particles-js"></div>
+
+    <div class="child">
+      <img id="logo" src="https://cdn.discordapp.com/attachments/386660443701248002/386661860859969547/image.png">
+
+        <p class="lead text-center text-white">
+          <span class="text-1">
+            <a href="http://RoyalUHC.com/bans/">Bans</a> | <a href="http://store.royaluhc.com">Store</a> | <a href="http:/RoyalUHC.com/stats/">Stats</a>
+          </span>
+        </p>
+        <script src="https://mcapi.us/scripts/minecraft.js"></script>
+          <script>
+          MinecraftAPI.getServerStatus('37.187.73.200', {
+          port: 25462
+          }, function (err, status) {
+          if (err) {
+            return document.querySelector('.server-status').innerHTML = 'Error loading status';
+          }
+
+          document.querySelector('#online-num').innerHTML = status.players.now;
+          });
+          </script>
+
+          <div class="status text-center text-white">
+            Join <span id="online-num" style="color:#fb4444">0</span> player(s) on <strong>play.royaluhc.com</strong></div>
+      </div>
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js">
+    </script>
+    <script src="./assets/particles.js">
+    </script>
+    <script src="./assets/particle-loader.js">
+    </script>
+</body>
+</html>
